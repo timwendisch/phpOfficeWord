@@ -33,7 +33,7 @@ $EM_CONF[$_EXTKEY] = array(
         'depends' => array(
             'typo3' => '8.7.0-8.7.99',
             'php' => '5.6.0-7.2.99',
-            'phpOfficeCommon' => '0.2.9'
+            'phpofficecommon' => '0.2.9'
         ),
         'conflicts' => array(
         ),

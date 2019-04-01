@@ -1,5 +1,5 @@
 {
-    "name": "wendisch/phpOfficeWord",
+    "name": "wendisch/phpofficeword",
     "description": "Just a wrapper for the famous library. The original sources taken from https://github.com/PHPOffice",
     "type": "typo3-cms-extension",
     "keywords": [
@@ -68,12 +68,12 @@
         }
     },
     "replace": {
-        "phpOfficeWord": "self.version",
-        "typo3-ter/phpOfficeWord": "self.version"
+        "phpofficeword": "self.version",
+        "typo3-ter/phpofficeword": "self.version"
     },
     "extra": {
         "typo3/cms": {
-            "extension-key": "phpOffice_Word"
+            "extension-key": "phpofficeword"
         },
         "branch-alias": {
             "dev-develop": "0.17-dev"
