@@ -1,0 +1,82 @@
+{
+    "name": "wendisch/phpOfficeWord",
+    "description": "Just a wrapper for the famous library. The original sources taken from https://github.com/PHPOffice",
+    "type": "typo3-cms-extension",
+    "keywords": [
+        "TYPO3 CMS",
+        "mvc"
+    ],
+    "license": "LGPL-3.0",
+    "authors": [
+        {
+            "name": "Mark Baker"
+        },
+        {
+            "name": "Gabriel Bull",
+            "email": "me@gabrielbull.com",
+            "homepage": "http://gabrielbull.com/"
+        },
+        {
+            "name": "Franck Lefevre",
+            "homepage": "https://rootslabs.net/blog/"
+        },
+        {
+            "name": "Ivan Lanin",
+            "homepage": "http://ivan.lanin.org"
+        },
+        {
+            "name": "Roman Syroeshko",
+            "homepage": "http://ru.linkedin.com/pub/roman-syroeshko/34/a53/994/"
+        },
+        {
+            "name": "Antoine de Troostembergh"
+        },
+        {
+            "name": "Tim Wendisch"
+        }
+    ],
+    "require": {
+        "typo3/cms-core": "^8.7",
+        "php": "^5.3.3 || ^7.0",
+        "ext-xml": "*",
+        "zendframework/zend-escaper": "^2.2",
+        "phpoffice/common": "^0.2.9"
+    },
+    "require-dev": {
+        "ext-zip": "*",
+        "ext-gd": "*",
+        "phpunit/phpunit": "^4.8.36 || ^7.0",
+        "squizlabs/php_codesniffer": "^2.9",
+        "friendsofphp/php-cs-fixer": "^2.2",
+        "phpmd/phpmd": "2.*",
+        "phploc/phploc": "2.* || 3.* || 4.*",
+        "dompdf/dompdf": "0.8.*",
+        "tecnickcom/tcpdf": "6.*",
+        "mpdf/mpdf": "5.7.4 || 6.* || 7.*",
+        "php-coveralls/php-coveralls": "1.1.0 || ^2.0"
+    },
+    "suggest": {
+        "ext-zip": "Allows writing OOXML and ODF",
+        "ext-gd2": "Allows adding images",
+        "ext-xmlwriter": "Allows writing OOXML and ODF",
+        "ext-xsl": "Allows applying XSL style sheet to headers, to main document part, and to footers of an OOXML template",
+        "dompdf/dompdf": "Allows writing PDF"
+    },
+    "autoload": {
+        "psr-4": {
+            "PhpOffice\\PhpWord\\": "Vendor/PHPWord/src/PhpWord"
+        }
+    },
+    "replace": {
+        "phpOfficeWord": "self.version",
+        "typo3-ter/phpOfficeWord": "self.version"
+    },
+    "extra": {
+        "typo3/cms": {
+            "extension-key": "phpOffice_Word"
+        },
+        "branch-alias": {
+            "dev-develop": "0.17-dev"
+        }
+    }
+}
