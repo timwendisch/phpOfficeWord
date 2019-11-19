@@ -3,7 +3,7 @@
 /* * *************************************************************
  * Extension Manager/Repository config file for ext "phpOfficeWord".
  *
- * Auto generated 01-04-2019 22:12
+ * Auto generated 19-11-2019 22:12
  *
  * Manual updates:
  * Only the data in the array - everything else is removed by next
@@ -14,7 +14,7 @@ $EM_CONF[$_EXTKEY] = array(
     'description' => 'Just a wrapper for the famous library. The original sources taken from https://github.com/PHPOffice',
     'category' => 'misc',
     'shy' => 0,
-    'version' => '0.16.0',
+    'version' => '0.17.0',
     'dependencies' => 'cms',
     'conflicts' => '',
     'priority' => '',
