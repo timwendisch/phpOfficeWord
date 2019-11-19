@@ -41,7 +41,7 @@ namespace PhpOffice\PhpWord\Element;
  * @method Field addField(string $type = null, array $properties = array(), array $options = array(), mixed $text = null)
  * @method Line addLine(mixed $lineStyle = null)
  * @method Shape addShape(string $type, mixed $style = null)
- * @method Chart addChart(string $type, array $categories, array $values, array $style = null)
+ * @method Chart addChart(string $type, array $categories, array $values, array $style = null, $seriesName = null)
  * @method FormField addFormField(string $type, mixed $fStyle = null, mixed $pStyle = null)
  * @method SDT addSDT(string $type)
  *
@@ -254,7 +254,7 @@ abstract class AbstractContainer extends AbstractElement
         // Special condition, e.g. preservetext can only exists in cell when
         // the cell is located in header or footer
         $validSubcontainers = array(
-            'PreserveText'  => array(array('Cell'), array('Header', 'Footer')),
+            'PreserveText'  => array(array('Cell'), array('Header', 'Footer', 'Section')),
             'Footnote'      => array(array('Cell', 'TextRun'), array('Section')),
             'Endnote'       => array(array('Cell', 'TextRun'), array('Section')),
         );
